@@ -36,6 +36,27 @@ ORDER BY total_salary DESC
 
 Answer: David Price earnedd the most. */
 
+/*4:
+
+OUtfield: 29560, Infield: 58934, Battery: 39182.
+
+Select
+	sum(po) as total_putouts,
+	CASE WHEN pos = 'OF' THEN 'Outfield'
+	WHEN pos = 'SS' OR pos = '1B' OR pos = '2B' OR pos = '3B' THEN 'infield'
+	WHEN pos = 'p' OR pos = 'C' THEN 'Battery'
+	END AS position
+FROM fielding
+WHERE yearid = '2016'
+GROUP by position*/
+
+/* 5: 
+
+
+
+
+
+
 
 
 
